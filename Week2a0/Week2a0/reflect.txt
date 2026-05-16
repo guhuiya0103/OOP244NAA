@@ -1,0 +1,2 @@
+I learned GitHub, SSH keys, and Matrix.
+I was confused about why git push kept asking for username and password until I realized I cloned using the https URL.
