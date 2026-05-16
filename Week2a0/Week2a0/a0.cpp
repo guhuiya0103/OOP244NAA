@@ -18,7 +18,7 @@ int main(int argc, const char * argv[]) {
     std::cout << "113004253\n";
     std::cout << "Email:\n";
     std::cout << "hgu22@myseneca.ca\n";
-    std::cout << "Github repository URL: \n";
+    std::cout << "Github repository URL:\n";
     std::cout << "https://github.com/guhuiya0103/OOP244NAA\n";
     return EXIT_SUCCESS;
 }
