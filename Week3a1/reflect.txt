@@ -1,0 +1,7 @@
+This assignment was a good chance for me to review pointers, header files, and the similarities and differences between C and C++. While doing the assignment, I became more familiar with organizing code into different files and understanding how modules work together in C++.
+
+One thing I learned from this assignment was function overloading. I understand now that functions can have the same name as long as they have different parameter lists. I think this is very useful because it makes naming functions easier and keeps the code cleaner and more organized.
+
+The most difficult part for me was still pointers. Before I start coding, I usually need time to think carefully about the relationship between variables, addresses, and pointers. Sometimes I understand the idea, but it still takes me time to apply the logic correctly in code. Especially when using pointers with arrays or passing them into functions, it can become confusing.
+
+Even though pointers are challenging, I realized they are very important for efficiency and flexibility in programming. I know I still need more practice, but this assignment helped me understand them better than before. Overall, this assignment helped me become more comfortable with C++ programming and modular coding.
