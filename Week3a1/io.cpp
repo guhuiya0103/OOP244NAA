@@ -1,4 +1,5 @@
 #include "io.h" 
+#include "cstr.h"
 #include <iostream>
 using namespace std;
 namespace seneca {
