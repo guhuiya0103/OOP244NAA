@@ -40,17 +40,17 @@ namespace seneca {
             newSpace[i] = appendedData[i - size];
         }
 
-        delete [] data;
+        delete[] data;
         data = nullptr;
         data = newSpace;
     };
 
     void freemem(Samples*& s){
-        delete [] s->m_data;
+        delete[] s->m_data;
         s->m_data = nullptr;
-        delete [] s->m_title;
+        delete[] s->m_title;
         s->m_title = nullptr;
-        delete [] s;
+        delete s;
         s = nullptr;
     };
 }
