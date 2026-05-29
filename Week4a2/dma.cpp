@@ -8,7 +8,7 @@ namespace seneca {
     Samples* CreateSamples(const char* title){
         Samples *sample = nullptr;
         sample = new Samples;
-        sample->m_title = new char[strlen(title)]; //ask the memory from the system for the space to allocate the new titles
+        sample->m_title = new char[strlen(title)+1]; //ask the memory from the system for the space to allocate the new titles
         strcpy(sample->m_title, title);
 
         sample->m_data = nullptr;
