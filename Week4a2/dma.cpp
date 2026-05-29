@@ -8,7 +8,7 @@ namespace seneca {
     Samples* CreateSamples(const char* title){
         Samples *sample = nullptr;
         sample = new Samples;
-        sample->m_title = new char[strlen(title)]; //ask the memory from the system for the space to allocate the new titles
+        sample->m_title = new char[strlen(title)+1]; //ask the memory from the system for the space to allocate the new titles
         strcpy(sample->m_title, title);
 
         sample->m_data = nullptr;
@@ -40,17 +40,17 @@ namespace seneca {
             newSpace[i] = appendedData[i - size];
         }
 
-        delete [] data;
+        delete[] data;
         data = nullptr;
         data = newSpace;
     };
 
     void freemem(Samples*& s){
-        delete [] s->m_data;
+        delete[] s->m_data;
         s->m_data = nullptr;
-        delete [] s->m_title;
+        delete[] s->m_title;
         s->m_title = nullptr;
-        delete [] s;
+        delete s;
         s = nullptr;
     };
 }

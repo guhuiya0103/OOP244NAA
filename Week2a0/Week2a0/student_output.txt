@@ -1,0 +1,27 @@
+Script started on Fri 15 May 2026 10:08:53 PM EDT
+==188642== Memcheck, a memory error detector
+==188642== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==188642== Using Valgrind-3.21.0 and LibVEX; rerun with -h for copyright info
+==188642== Command: as.exe
+==188642== 
+#### Assignment Zero ####
+Subject and Section:
+OOP244 NAA
+Name:
+Huiya Gu
+Student Number:
+113004253
+Email:
+hgu22@myseneca.ca
+Github repository URL:
+https://github.com/guhuiya0103/OOP244NAA
+==188642== 
+==188642== HEAP SUMMARY:
+==188642==     in use at exit: 0 bytes in 0 blocks
+==188642==   total heap usage: 1 allocs, 1 frees, 72,704 bytes allocated
+==188642== 
+==188642== All heap blocks were freed -- no leaks are possible
+==188642== 
+==188642== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+Script done on Fri 15 May 2026 10:08:54 PM EDT
