@@ -1,0 +1,5 @@
+During this assignment, I gained a better understanding of dynamic memory management and how important proper initialization is when working with pointers. One mistake I made was calling deallocate() before ensuring the pointer had been initialized. This caused runtime errors and invalid memory operations that were difficult to identify at first. After reviewing the Valgrind output and tracing the constructor execution, I realized that a pointer must be set to nullptr before it can be safely deleted.
+
+The most challenging part was debugging memory-related issues because the program could compile successfully while still having hidden runtime problems. Using Valgrind helped me understand where the errors originated and how object construction affects memory management.
+
+This assignment reminded me that when working with dynamic memory, small mistakes can create unexpected bugs. It also improved my confidence in reading error reports and debugging C++ programs more effectively.
