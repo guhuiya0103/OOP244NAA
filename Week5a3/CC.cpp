@@ -38,6 +38,7 @@ namespace seneca {
    void CC::aloCopy(const char* name){
       cardholderName = new char[strlen(name)+1];
       strcpy(cardholderName, name);
+      delete[] name;
    }
    void CC::deallocate(){
       delete[] cardholderName;
