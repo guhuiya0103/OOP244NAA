@@ -16,7 +16,7 @@ namespace seneca {
       bool validate(const char* name, unsigned long long cardNo, short cvv, short expMon, short expYear)const;
    public:
       CC();
-      CC(char* cardName, unsigned long long cardNum, short digits, short expMon=12, short expYr=26);
+      CC(const char* cardName, unsigned long long cardNum, short digits, short expMon=12, short expYr=26);
       ~CC();
       void set();
       bool isEmpty() const;
