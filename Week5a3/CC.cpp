@@ -38,14 +38,14 @@ namespace seneca {
    void CC::aloCopy(const char* name){
       cardholderName = new char[strlen(name)+1];
       strcpy(cardholderName, name);
-      delete[] name;
    }
    void CC::deallocate(){
       delete[] cardholderName;
       cardholderName = nullptr;
+
    }
    bool CC::validate(const char* name, unsigned long long cardNo, short cvv, short expMon, short expYear)const{
-      if (strlen(name)<= 2 || name==nullptr)  {
+      if (name == nullptr || strlen(name) <= 2){
          return false;
       }
       if (cardNo < 4000000000000000ull || cardNo > 4099999999999999ull){
@@ -76,6 +76,7 @@ namespace seneca {
       return true;
    }
    void CC::set(const char* cc_name, unsigned long long cc_no, short cvv, short expMon, short expYr){
+      deallocate();
       set();
       bool isValidated = validate(cc_name, cc_no, cvv, expMon, expYr);
       if (isValidated == true){
