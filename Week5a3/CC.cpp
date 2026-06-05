@@ -99,6 +99,7 @@ namespace seneca {
       set();
    }
    CC::CC(const char* cardName, unsigned long long cardNum, short digits, short expMon, short expYr){
+      set();
       set(cardName, cardNum, digits, expMon, expYr);
    }
    CC::~CC(){
