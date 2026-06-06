@@ -25,7 +25,7 @@ namespace sdds {
         if (m_charge >=0 && m_charge <=100){
             ostr << "Battery: " << m_charge << "%";
         } else {
-            ostr << "Invalid Battery" << endl;
+            ostr << "Invalid Battery";
         }
         return ostr;
     }
