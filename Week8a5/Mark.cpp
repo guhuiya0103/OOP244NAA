@@ -129,16 +129,22 @@ namespace seneca {
       }
       else{
          if(m_type == GPA){
-            ost<<fixed<<setprecision(1);
-            ost<<setw(3)<<(double)(*this);
+            ost.setf(ios::fixed,ios::floatfield);
+            ost.precision(1);
+            ost.width(3);
+            ost<<(double)(*this);
          }
          if(m_type == MARK){
-            ost<<setfill('_');
-            ost<<setw(3)<<right<<(int)(*this);
+            ost.setf(ios::right, ios::adjustfield);
+            ost.fill('_');
+            ost.width(3);
+            ost<<(int)(*this);
          }
          if(m_type == GRADE){
-            ost<<setfill(' ');
-            ost<<setw(3)<<left<<(const char*)(*this);
+            ost.setf(ios::left, ios::adjustfield);
+            ost.fill(' ');
+            ost.width(3);
+            ost<<(const char*)(*this);
          }
       }
      
