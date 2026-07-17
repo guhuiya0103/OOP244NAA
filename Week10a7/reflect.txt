@@ -1,0 +1,7 @@
+下面这个版本比较自然，也符合 at least 150 words 的要求：
+
+In this assignment, I learned how to create a derived class from a base class and how inheritance can help reduce repeated code. The Professor class inherits the common employee information and functions from the Employee class, while adding its own subject name and number of sections. I also learned how to override functions such as read(), write(), and title(), while still calling the original Employee functions using the scope resolution operator. This helped me understand that a derived class can reuse the base class code and then add its own behaviour.
+
+One difficulty I had was managing the dynamically allocated C-string for the subject name. I needed to make sure the memory was allocated correctly and that the pointer was kept in a safe empty state. Formatting the output was also a little difficult because I had to use setw, left, right, fixed, and setprecision correctly to match the expected output exactly. Another part I had to pay attention to was the custom insertion and extraction operators and how they call the read and write functions.
+
+Overall, this assignment helped me understand inheritance and custom input/output operators better. My suggestion is to provide more small examples showing the exact output formatting, because even a small spacing difference can cause the tester result to be incorrect.
