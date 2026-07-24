@@ -21,6 +21,7 @@ namespace seneca {
       char* buffer = new char[81];
       is.getline(buffer, 81, ',');
       ut.alocpy(m_label, buffer);
+      delete[] buffer;
    }
 
 }
