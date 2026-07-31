@@ -11,8 +11,7 @@ namespace seneca {
         m_studentNum = studentNum;
    }
 
-   Transcript::Transcript(const Transcript& other) {
-        Marks(other);
+   Transcript::Transcript(const Transcript& other) : Marks(other){
         ut.alocpy(m_studentName, other.m_studentName);
         m_studentNum = other.m_studentNum;
    }
